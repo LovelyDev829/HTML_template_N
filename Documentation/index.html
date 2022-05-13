@@ -1,0 +1,317 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>JS</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+		.style_s span{color:#18b74c}
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;JS&rdquo; Documentation by &ldquo;Alessio Corsini&rdquo; v1.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;JS&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 28/04/2014<br>
+					By: Alessio<br>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">
+                Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/corsaro">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#htmlStructure">HTML Structure</a></li>
+			<li><a href="#cssFiles">CSS Files and Structure</a></li>
+			<li><a href="#javascript">JavaScript</a></li>
+			<li><a href="#psdFiles">Files included</a></li>
+	
+		</ol>
+		
+		<hr>
+		
+		<h3 id="htmlStructure"><strong>A) HTML Structure</strong> - <a href="#toc">top</a></h3>
+		<p>Layout Responsive all divided into fbsection part of page.<br />
+        
+        This theme is perfectly responsive and mobile optimized.<br />
+       </p>
+		
+		<img src="assets/images/htmlstructure.png" alt="HTML Structure" />
+        <br /><br />
+        <hr>
+        <h3 id="h2"><strong>SlideShow effect transition</strong> - <a href="#toc">top</a></h3>
+        <p>Easy to modify you have the file .css name: slideshow.css</p>
+        <pre>
+        This is a structure for populate the structure inside the file index.html with the delay for all image in sequence
+
+        .cb-slideshow li:nth-child(2) span {
+            background-image: url(../images/5.jpg);
+            -webkit-animation-delay: 6s;
+            -moz-animation-delay: 6s;
+            -o-animation-delay: 6s;
+            -ms-animation-delay: 6s;
+            animation-delay: 6s;
+        }
+        .cb-slideshow li:nth-child(3) span {
+            background-image: url(../images/4.jpg);
+            -webkit-animation-delay: 12s;
+            -moz-animation-delay: 12s;
+            -o-animation-delay: 12s;
+            -ms-animation-delay: 12s;
+            animation-delay: 12s;
+        }
+        
+
+        this part with time animation during and call the key-frame imageAnimation
+
+        .cb-slideshow li span {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            color: transparent;
+            background-size: cover;
+            background-position: 50% 50%;
+            background-repeat: none;
+            opacity: 0;
+            z-index: 0;
+	        -webkit-backface-visibility: hidden;
+            -webkit-animation: imageAnimation 30s linear infinite 0s;
+            -moz-animation: imageAnimation 30s linear infinite 0s;
+            -o-animation: imageAnimation 30s linear infinite 0s;
+            -ms-animation: imageAnimation 30s linear infinite 0s;
+            animation: imageAnimation 30s linear infinite 0s;
+        }
+        </pre><br /><hr>
+        <h3>So create other scroll the same about page:</h3>
+        <pre>
+        $(".yourclass").mCustomScrollbar({
+            scrollButtons: {
+                enable: true
+            },
+            theme: "dark"
+        });
+        </pre>
+		<hr>
+        <h3 id="h1"><strong>ADD MORE IMAGE in the portfolio</strong> - <a href="#toc">top</a></h3>
+        <p>If you want add more image into gallery need to create a scroll the same in about</p>
+
+        <p>So create other scroll:</p>
+        <pre>
+        $(".yourclass").mCustomScrollbar({
+            scrollButtons: {
+                enable: true
+            },
+            theme: "dark"
+        });
+        </pre>
+        <p>After this add the class where you want create the scroll..</p>
+        <hr>
+		<h3 id="cssFiles"><strong>B) CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+
+		<p>Easy structure css</p> 
+        <p>jquery.mCustomScrollbar.css it s for personalize scrollbar</p>
+		<p>screen.css/screen_black.css content the website structure</p>  
+
+        <p>This is the structure screen.css</p>
+        <pre>	
+        /******* General Structure *********/
+
+        /******* Background Img *********/
+
+        /******* Preview Effect *********/
+
+        /******* Menu *********/
+
+        /******* About *********/
+
+        /******* MY Services ********/
+
+        /******* MY Services II ***********/
+
+        /******* Experience *********/
+
+        /******* Contact ************/
+
+        /****** Details Pages **********/
+	
+        </pre>
+        <br />
+		<p>
+        .effectopacity it s effect up the image big with the arrow-bg-1.png
+        the square create with css .tablet-logo 
+        </p>
+		
+		<hr>
+		
+		<h3 id="javascript"><strong>C) JavaScript</strong> - <a href="#toc">top</a></h3>
+		
+		<p>Structure Javascript files.</p>
+		  
+		<ol>
+			<li>jQuery is a Javascript library that greatly reduces the amount of code that you must write.</li>
+            			<li>
+            <p>This is a code for modify the time preview name</p>
+    <pre>	
+
+      $(function () { cbpFixedScrollLayout.init(); });
+        $(window).load(function () {
+            "use strict";
+            $(".modal").delay(5000).fadeOut(1000);
+        });
+
+    </pre>
+
+            <p>This is a code js for open the image in the portfolio</p>
+    <pre>	
+	
+
+        $(document).ready(function () {
+            "use strict";
+            /*
+            *  Simple image gallery. Uses default settings
+            */
+
+            $('.fancybox').fancybox();
+
+            // Remove padding, set opening and closing animations, close if clicked and disable overlay
+            $(".fancybox-effects-d").fancybox({
+                padding: 0,
+
+                openEffect: 'elastic',
+                openSpeed: 150,
+
+                closeEffect: 'elastic',
+                closeSpeed: 150,
+
+                closeClick: true,
+                arrows: true,
+                showArrows: true,
+                helpers: {
+                    overlay: null
+                }
+            });
+
+        });
+
+    </pre>
+
+<p>This is part the code for the custom scroll where you can change the style with the theme: "dark", see the theme in this link http://manos.malihu.gr/tuts/custom-scrollbar-plugin/scrollbar_themes_demo.html</p>
+<pre>
+
+   (function ($) {
+    "use strict";
+    $(window).load(function () {
+        $("#content_1").mCustomScrollbar({
+            scrollButtons: {
+                enable: true
+            },
+            theme: "dark"
+        });
+        $(".inner-noslit").mCustomScrollbar({
+            scrollButtons: {
+                enable: true
+            },
+            theme: "dark"
+        });
+        //ajax demo fn
+        $("a[rel='load-content']").click(function (e) {
+            e.preventDefault();
+            var $this = $(this),
+			url = $this.attr("href");
+            $this.addClass("loading");
+            $.get(url, function (data) {
+                $this.removeClass("loading");
+                $("#content_1 .mCSB_container").html(data); //load new content inside .mCSB_container
+                $("#content_1").mCustomScrollbar("update"); //update scrollbar according to newly loaded content
+                $("#content_1").mCustomScrollbar("scrollTo", "top", { scrollInertia: 200 }); //scroll to top
+            });
+        });
+        $("a[rel='append-content']").click(function (e) {
+            e.preventDefault();
+            var $this = $(this),
+			url = $this.attr("href");
+            $this.addClass("loading");
+            $.get(url, function (data) {
+                $this.removeClass("loading");
+                $("#content_1 .mCSB_container").append(data); //append new content inside .mCSB_container
+                $("#content_1").mCustomScrollbar("update"); //update scrollbar according to newly appended content
+                $("#content_1").mCustomScrollbar("scrollTo", "h2:last", { scrollInertia: 2500, scrollEasing: "easeInOutQuad" }); //scroll to appended content
+            });
+        });
+    });
+})(jQuery);
+
+</pre>
+<p>This is a code for redirect page with the effect fade</p>
+
+<pre>
+ 
+    $(document).ready(function () {
+        $("body").css("display", "none"); $("body").fadeIn(1000);
+        $(".smooth-redirect").click(function (event) {
+            event.preventDefault(); linkLocation = this.href;
+            $("body").fadeOut(1000, redirectPage);
+        });
+        function redirectPage() { window.location = linkLocation; }
+    });
+			
+</pre>
+
+<p>This is the code for the percentage inside the experience</p>
+<pre>
+ 
+		$('.experience').click(function () {
+            "use strict";
+            $('.skillbar').each(function () {
+                $(this).find('.skillbar-bar').width(0);
+            });
+
+            $('.skillbar').each(function () {
+                $(this).find('.skillbar-bar').animate({
+                    width: $(this).attr('data-percent')
+                }, 2000);
+            });
+
+        });
+			
+</pre>
+			</li>
+
+		</ol>
+		
+		<hr>
+		
+		<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+		
+		<p class="append-bottom alt large"><strong>Corsaro</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
